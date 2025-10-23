@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitBee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐝 UnitBee</h1>
+            <p class="subtitle">Convert between different units of measurement</p>
+        </header>
+
+        <div class="converter-card">
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="volume">Volume</option>
+                    <option value="area">Area</option>
+                    <option value="time">Time</option>
+                    <option value="speed">Speed</option>
+                    <option value="data">Data Storage</option>
+                    <option value="energy">Energy</option>
+                    <option value="angle">Angle</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="from-value">Value</label>
+                <input type="number" id="from-value" placeholder="Enter value" step="any">
+            </div>
+
+            <div class="form-group">
+                <label for="from-unit">From</label>
+                <select id="from-unit"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="to-unit">To</label>
+                <select id="to-unit"></select>
+            </div>
+
+            <button class="btn" id="convert-btn">Convert</button>
+
+            <div class="result-box" id="result"></div>
+        </div>
+    </div>
+
+    <footer>
+        Made with <span class="heart">❤️</span> by Sauravhhh
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
